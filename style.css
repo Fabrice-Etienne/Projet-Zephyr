@@ -1,0 +1,23 @@
+/* police Poppins : 'Poppins', sans empattement ; 
+   police Ethnocentric : 'Ethnocentric Rg', sans-serif;
+*/
+
+* {
+   margin: 0px ;
+   padding: 0px ;
+   box-sizing: border-box ;
+}
+
+:root {
+   --white: #f1f1f1;
+   --primary1: #18d3ff;
+   --primary2: #0dc3ff;
+   --black:#050505;
+   --colorPrimary:#e1603a;
+}
+
+
+.espace {
+   background-color: red ;
+   margin: 2000px 0px 0px 0px;
+}
