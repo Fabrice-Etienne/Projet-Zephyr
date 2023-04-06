@@ -1,4 +1,4 @@
-/* police Poppins : 'Poppins', sans empattement ; 
+/* police Poppins : 'Poppins', sans empattement ;
    police Ethnocentric : 'Ethnocentric Rg', sans-serif;
 */
 
@@ -16,8 +16,120 @@
    --colorPrimary:#e1603a;
 }
 
+body {
+   font-family: 'Poppins', sans empattement ;
+}
 
-.espace {
-   background-color: red ;
-   margin: 2000px 0px 0px 0px;
+      /* Synchronisation de tous les bouttons  */
+body .btns {
+   position: relative;
+   padding: 8px 10px ;
+   border-radius: 50px;
+   overflow: hidden;
+   cursor: pointer;
+   z-index: 10 ;
+}
+      /* Synchronisation de tous les spans de numérotation  */
+body .numero-de-separation {
+   color: var(--white);
+   background-color: var(--colorPrimary) ;
+   width: 3rem;
+   height: 3rem;
+   border-radius: 1000px;
+   display: flex ;
+   justify-content: center ;
+   align-items: center;
+   font-weight: bold;
+}
+
+body img {
+   width: 100px;
+}
+
+body .map iframe{
+   width: 100px;
+}
+
+         /* Section-1 */
+
+.section-1 {
+   background-image: url(./images/hero.png);
+   background-repeat: no-repeat ;
+   background-size: cover ;
+   width: 100%;
+}
+      /* Partie Header */
+
+header {
+   display: flex ;
+   align-items: center ;
+   justify-content: space-between;
+   padding: 8px 4%;
+}
+
+header nav {
+   /* On fait disparaitre la navbar sur la version mobile */
+   display: none;
+}
+header .droite-header span:not(#menu){
+   display: none;
+}
+header #menu i{
+   font-size: 1.1rem;
+}
+
+      /* .Container */
+
+.container {
+   display: flex ;
+   flex-flow: row wrap ;
+   justify-content: center;
+   padding: 48px 4% 32px;
+}
+.container .ligne-extreme-gauche {
+   display: none ;
+}
+.container h2 {
+   font-weight: 300 ;
+   font-size: 1.6rem;
+}
+.container h1 {
+   font-size: 1.8rem;
+   margin-bottom: 24px;
+   color: var(--colorPrimary);
+}
+.container p {
+   text-align: center ;
+   line-height: 1.6rem;
+}
+.container .bas {
+   padding: 32px 0px 0px 0px;
+}
+.container .btn-1 {
+   color: var(--white) ;
+   min-width: 13rem;
+   letter-spacing: 1px;
+   transition: transform 0.3s ease-in-out;
+}
+.container .btn-1::after {
+   content: "";
+   position: absolute ;
+   top: 0px ;
+   left: 0px ;
+   width: 100% ;
+   height: 100%;
+   background-color: var(--black);
+   z-index: -1 ;
+   transition: transform 0.2s ease-in-out;
+} 
+
+.container .btn-1:hover {
+   color: var(--black) ;
+} 
+.container .btn-1:hover::after {
+   transform: translateY(-100%);
+} 
+.container .spans{
+   text-align: center ;
+   padding: 40px 0px 0px 0px;
 }
