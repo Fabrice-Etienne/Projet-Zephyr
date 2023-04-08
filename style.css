@@ -253,17 +253,17 @@ body .numero-de-separation {
    align-items: center;
    font-size: 1.6rem;
 }
-.section-4 .gallerie{
-   display: flex ;
-   flex-flow: row wrap ;
+
+.section-4 .gallerie .items {
+   margin-bottom: 8px;
 }
 .section-4 .gallerie img{
    width: 100% ;
    object-fit: cover;
-   transition: transform 0.3s ease-in-out;
+   transition: transform 0.3s ease-out;
 }
-.section-4 .gallerie img:hover{
-   transform: scale(1.01);
+.section-4 .gallerie img:hover {
+   transform: scale(1.006);
 }
 .section-4 .num-4 {
    bottom: -24px ;
