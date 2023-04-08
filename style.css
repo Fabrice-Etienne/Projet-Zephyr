@@ -118,7 +118,6 @@ body .numero-de-separation {
    transform: translateY(-100%);
 } 
 .container .spans{
-   text-align: center ;
    padding: 32px 0px 0px 0px;
    display: flex ;
    justify-content: center ;
@@ -239,7 +238,6 @@ body .numero-de-separation {
       /* Quatrième section (Gallerie d'images) */
 
 .section-4 {
-   background: var(--white);
    padding: 56px 4% 80px;
    position: relative;
 }
@@ -275,7 +273,7 @@ body .numero-de-separation {
       /* Sixième section ( Formulaire ) */
 
 .section-6 {
-   /* background: linear-gradient(#ffffff, #ffe8d6f1); */
+   background: var(--white);
    padding: 56px 4%;
 }
 .section-6 h2 {
@@ -297,8 +295,7 @@ body .numero-de-separation {
    width: 100% ;
    padding: 10px 16px ;
    border-radius: 6px ;
-   border: 1px solid rgba(0, 0, 0, 0.5) ;
-   /* outline: none ; */
+   border: 1px solid rgba(0, 0, 0, 0.3) ;
 }
 .section-6 form div input:focus {
    outline: 2px solid rgba(255, 85, 0,0.2);
@@ -309,7 +306,7 @@ body .numero-de-separation {
    width: 100% ;
    padding: 10px 16px;
    border-radius: 6px ;
-   border: 1px solid rgba(0, 0, 0, 0.5) ;
+   border: 1px solid rgba(0, 0, 0, 0.3) ;
 }
 .section-6 form textarea:focus  {
    outline: 2px solid rgba(255, 85, 0,0.2);
@@ -358,7 +355,7 @@ body .numero-de-separation {
 
 footer {
    background: var(--black);
-   padding: 56px 4% 16px;
+   padding: 32px 4% 16px;
    color: var(--white);
    text-align: center;
    position: relative ;
@@ -380,7 +377,7 @@ footer::after{
 footer .contacts h2 {
    font-size: 1.6rem ;
    font-weight: 800 ;
-   margin-bottom: 32px;
+   margin-bottom: 24px;
 }
 
 footer .contacts p{

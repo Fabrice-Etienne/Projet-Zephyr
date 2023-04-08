@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zephyr</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Code CSS pour tout le responsive du site Zephyr -->
+    <link rel="stylesheet" href="./responsive.css ">
 
     <!-- Connexion à google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -135,16 +137,16 @@
             </h2>
             <form action="./traitement.php" method="post">
                 <div>
-                    <input type="text" name="nom" placeholder="Votre nom" required>
+                    <input type="text" name="nom" placeholder="Nom" required>
                 </div>
                 <div>
-                    <input type="email" name="email" placeholder="Votre Email" required>
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <div>
-                    <input type="number" name="numero_telephone" placeholder="Votre numéro de téléphone">
+                    <input type="number" name="numero_telephone" placeholder="Téléphone (facultatif)">
                 </div>
                 <div>
-                    <textarea name="message" rows="4" placeholder="Votre message"></textarea>
+                    <textarea name="message" rows="4" placeholder="Message"></textarea>
                 </div>
                 <div>
                     <button type="submit" class="btns btn-3" name="envoyer">Envoyer</button>
