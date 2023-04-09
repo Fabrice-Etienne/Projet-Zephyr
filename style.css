@@ -37,6 +37,10 @@ body .numero-de-separation {
    z-index: 5;
 }
 
+body a {
+   color: var(--black) ;
+   text-decoration: none;
+}
          /* Section-1 */
 
 .section-1 {
