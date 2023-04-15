@@ -178,6 +178,9 @@
 }
 
 @media (min-width: 1024px){
+    .section-1 {
+        height: 100vh ;
+     }
     .section-1 header {
         display: grid ;
         grid-template-columns: repeat(12,1fr);
@@ -286,5 +289,49 @@
     .section-4 .gallerie .item-8 {
         grid-column: 9/-1;
         grid-row: 3/5;
+    }
+}
+
+@media (min-width: 1440px){
+    .section-1 {
+        height: 90vh;
+    }
+    .section-1 header {
+        padding: 8px 8%;
+     }
+    .section-1 .container  {
+       display: flex ;
+       flex-direction: column;
+       align-items: center ;
+       padding: 56px 0px 32px;
+    } 
+    .section-1 .container h1 {
+        font-size: 3.8rem;
+    }
+    .section-1 .container h2 {
+        font-size: 2.8rem;
+    }
+    .section-2 .droite h2,
+    .section-3 h2,
+    .section-4 h2,
+    .section-6 h2,
+    footer .contacts h2 {
+        font-size: 2.2rem;
+    }
+    .section-1 .container .bas .spans {
+        justify-content: center;
+    }
+    .section-2 {
+        padding: 72px 8% 88px;
+     }
+     .section-3 {
+        padding: 64px 8%;
+     }
+     .section-4 {
+        padding: 56px 8% 80px;
+     }
+     .section-6 form {
+        width: 35% ;
+        margin: auto;
     }
 }

@@ -305,6 +305,17 @@ body a {
    outline: 2px solid rgba(255, 85, 0,0.2);
    border: none ;
 }
+    /* Firefox */
+    .section-6 input[type=number] {
+      -moz-appearance: textfield;
+  }
+   
+  /* Chrome */
+  .section-6 input::-webkit-inner-spin-button,
+  .section-6 input::-webkit-outer-spin-button { 
+     -webkit-appearance: none;
+     margin:0;
+  }
 .section-6 form textarea {
    resize: none;
    width: 100% ;
