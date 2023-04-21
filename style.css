@@ -15,6 +15,9 @@
       /* Synchronisation de tous les bouttons  */
 
 body .btns {
+   display: flex ;
+   justify-content: center ;
+   align-items: center ;
    position: relative;
    border-radius: 1000px;
    overflow: hidden;
@@ -96,6 +99,7 @@ body a {
    padding: 32px 0px 0px 0px;
 }
 .container .btn-1 {
+   margin: auto ;
    color: var(--white) ;
    min-width: 13rem;
    padding: 8px 10px ;
@@ -242,7 +246,7 @@ body a {
       /* Quatrième section (Gallerie d'images) */
 
 .section-4 {
-   padding: 56px 4% 80px;
+   padding: 56px 4%;
    position: relative;
 }
 .section-4 h2 span img{
@@ -264,10 +268,7 @@ body a {
 .section-4 .gallerie img{
    width: 100% ;
    object-fit: cover;
-   transition: transform 0.3s ease-out;
-}
-.section-4 .gallerie img:hover {
-   transform: scale(1.006);
+   height: 352px ;
 }
 .section-4 .num-4 {
    bottom: -24px ;
@@ -302,13 +303,9 @@ body a {
    border: 1px solid rgba(0, 0, 0, 0.3) ;
 }
 .section-6 form div input:focus {
-   outline: 2px solid rgba(255, 85, 0,0.2);
+   outline: 1px solid rgba(255, 85, 0,0.2);
    border: none ;
 }
-    /* Firefox */
-    .section-6 input[type=number] {
-      -moz-appearance: textfield;
-  }
    
   /* Chrome */
   .section-6 input::-webkit-inner-spin-button,
@@ -324,13 +321,14 @@ body a {
    border: 1px solid rgba(0, 0, 0, 0.3) ;
 }
 .section-6 form textarea:focus  {
-   outline: 2px solid rgba(255, 85, 0,0.2);
+   outline: 1px solid rgba(255, 85, 0,0.2);
    border: none;
 }
 .section-6 form div:last-child {
    text-align: center;
 }
 .section-6 form .btn-3 {
+   margin: auto ;
    background-color: var(--white) ; 
    color: var(--white) ;
    min-width: 7rem;
@@ -373,21 +371,6 @@ footer {
    padding: 32px 4% 16px;
    color: var(--white);
    text-align: center;
-   position: relative ;
-   z-index: 2 ;
-}
-footer::after{
-   content: "";
-   position: absolute ;
-   bottom: 0px ;
-   left: 0px ;
-   height: 100% ;
-   width: 100%;
-   background-image: url(./images/flower.png) ;
-   background-repeat: no-repeat ;
-   background-size: cover ;
-   background-position: bottom;
-   z-index: -1 ;
 }
 footer .contacts h2 {
    font-size: 1.6rem ;
@@ -418,4 +401,21 @@ footer .separateur {
    height: 1.2px ;
    background-color: var(--white) ;
    border-radius: 6px ;
+}
+
+         /* Page Inspirations */
+.section-4 #inspiration-titre {
+   margin: -32px 0px 32px 0px;
+   display: flex ;
+   justify-content: center;  
+   font-size: 1.6rem;
+}
+
+.section-4 .gallerie-inspiration .images {
+   margin-bottom: 8px;
+}
+.section-4 .gallerie-inspiration img{
+   width: 100% ;
+   object-fit: cover; 
+   height: 352px ;
 }
